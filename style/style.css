@@ -30,13 +30,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: auto;
+    padding: 15% 0;
     align-items: center;
     text-align: center;
 }
 
 .container {
-    height: 100vh;
+    height: auto;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -95,11 +96,14 @@ body {
 
 .secundario__img {
     width: 100%;
+    padding: 15% 0 0 0;
 }
 
 .secundario {
     align-items: center;
-    margin: 0 10em;
+    margin: 0 10em 15em;
+
+
 }
 
 .descricao__titulo {
@@ -229,6 +233,9 @@ body {
         margin-bottom: 1em;
     }
 
+    .container__descricao {
+        padding: 5% 0;
+    }
 
     .secundario {
         display: flex;
@@ -237,6 +244,10 @@ body {
 
     .secundario__imagem {
         width: 100%;
+    }
+
+    .secundario__img {
+        padding: 0 0 25%;
     }
 
     .descricao__titulo {
@@ -281,24 +292,89 @@ body {
 
 @media (max-width: 480px) {
 
+    .principal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* Garantir que o conteúdo use a largura total da tela */
+        justify-content: center;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .container {
+        height: auto;
+        grid-template-columns: 100%;
+        text-align: center;
+        padding: 5%;
+        margin: 0;
+        padding: 1em;
+    }
+
+    .container__caixa {
+        margin: 0;
+        padding: 3em;
+        margin-top: 3rem;
+        width: auto;
+        justify-content: center;
+    }
+
     .container__titulo {
         font-size: 1rem;
     }
 
-    .descricao__titulo {
-        font-size: 1.5rem;
+    .container__btn {
+        padding: 1rem;
+        font-size: 1rem;
+        margin: 1em 0;
     }
 
-    .descricao__texto {
-        font-size: 0.75rem;
+    .container__img {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+
+    .secundario {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 3em;
+        height: 100%;
+    }
+
+    .descricao__titulo {
+        font-size: 1.5rem;
+        height: 100%;
+    }
+
+    .lista__link a {
+        font-size: 0.8rem;
+    }
+
+    .secundario__imagem {
+        width: 100%;
     }
 
     .dispositivos__titulo {
-        font-size: 1.5em;
+        margin: 0 0 2rem 0;
     }
 
-    .lista__item {
-        font-size: 1em;
+    .dispositivos__lista {
+        flex-direction: column;
+        margin: 0;
     }
 
+    .rodape__logo {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .rodape__texto {
+        font-size: 0.75rem;
+    }
 }
