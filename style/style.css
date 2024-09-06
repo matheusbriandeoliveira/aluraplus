@@ -23,10 +23,14 @@ body {
     font-weight: 400;
 }
 
+
+
 .principal {
     background-image: url(/assets/Background.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
     align-items: center;
     text-align: center;
 }
@@ -90,7 +94,7 @@ body {
 
 
 .secundario__img {
-    width: 80%;
+    width: 100%;
 }
 
 .secundario {
@@ -182,5 +186,119 @@ body {
 .rodape__texto {
     font-size: 0.88em;
     margin: 2% 10%;
+
+}
+
+@media (max-width: 1200px) {
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+        background-size: contain;
+        background-position: center;
+    }
+
+
+
+
+    .container {
+        grid-template-columns: 100%;
+        text-align: center;
+        padding: 5%;
+
+
+    }
+
+    .container__caixa {
+        margin: 0 10em;
+    }
+
+    .container__titulo {
+        font-size: 1.5rem;
+    }
+
+    .container__img {
+        width: 90%;
+        margin: 0.5em 0;
+    }
+
+    .container__btn {
+        padding: 0.75rem;
+        margin-bottom: 1em;
+    }
+
+
+    .secundario {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .secundario__imagem {
+        width: 100%;
+    }
+
+    .descricao__titulo {
+        font-size: 2.5em;
+    }
+
+    .lista__link a {
+        font-size: 0.5em;
+
+    }
+
+    .secundario__imagem {
+        width: 100%;
+    }
+
+    .dispositivos {
+        margin-top: 8em;
+
+    }
+
+    .dispositivos__titulo {
+        font-size: 2.5em;
+    }
+
+    .dispositivos__lista {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        gap: 1em;
+        font-size: 2em;
+    }
+
+    .rodape__texto {
+        font-size: 0.75em;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .container__titulo {
+        font-size: 1rem;
+    }
+
+    .descricao__titulo {
+        font-size: 1.5rem;
+    }
+
+    .descricao__texto {
+        font-size: 0.75rem;
+    }
+
+    .dispositivos__titulo {
+        font-size: 1.5em;
+    }
+
+    .lista__item {
+        font-size: 1em;
+    }
 
 }
