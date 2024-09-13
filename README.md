@@ -1,6 +1,6 @@
 <h1 align= "center">
     <img src="/assets/Logo.png" alt="Logo da Alura+">
-    <p>Alura+
+    <p>
 </p>
 </h1>
 
